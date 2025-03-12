@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Secure Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassX</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Password Manager</h1>
+        <p>Securely store and manage your passwords with ease.</p>
+
+        <h2>Your Saved Passwords <span id="alert">(Copied!)</span></h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+        </table>
+
+        <h2>Add a New Password</h2>
+        <form>
+            <label for="website">Website:</label>
+            <input type="text" id="website" required>
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button class="btn" type="submit">Save</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
